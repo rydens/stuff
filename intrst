@@ -4,10 +4,11 @@ p = input('Principal>')
 per = input('Rate- percentage, not sign>')
 t = input('Time in years>')
 
-r = int(per)/100
+r = float(per)/100
 
-interest = int(p)*r*int(t)
+interest = int(p)*r*float(t)
 total = int(p)+interest
 
 print('Interest: ' + str(interest))
 print('Total: ' + str(total))
+print('Formula: ' + 'I = ' + str(p) + '(' + str(r) + ')' + str(t))
