@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+months = input('Months>')
+
+years = int(months)/12
+
+print('Years: ' + str(years))
