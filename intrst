@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+p = input('Principal>')
+per = input('Rate- percentage, not sign>')
+t = input('Time in years>')
+
+r = int(per)/100
+
+interest = int(p)*r*int(t)
+total = int(p)+interest
+
+print('Interest: ' + str(interest))
+print('Total: ' + str(total))
