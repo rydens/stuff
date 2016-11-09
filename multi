@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+import skilstak.colors as c
+from time import sleep
+from os import system
+
+
+message = 'nothing'
+horizontalspace = '                                                                            '
+verticalspace = '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+
+def type():
+    which = input(c.red + '> ' + c.cyan)
+    if which == 'multicolored':
+        print(c.g + 'What do you want to make multi-colored?')
+        multimessage = input(c.red + '> ' + c.cyan)
+        message = multimessage
+
+
+try:
+    pass
+except KeyboardInterrupt:
+    print(c.clear)
+    print(c.g + 'Bye! Come again!')
+    sleep(.7)
+    system('clear')
+    exit()
